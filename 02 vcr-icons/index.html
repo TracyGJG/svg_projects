@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VCR Sprite</title>
+    <style>
+      .vcr-sprite {
+        --sprite-size: 100px;
+
+        width: var(--sprite-size);
+        aspect-ratio: 1;
+        display: inline-block;
+        background-size: var(--sprite-size);
+
+        &.--first {
+          background-image: url('./vcr.svg#first');
+        }
+
+        &.--prev {
+          background-image: url('./vcr.svg#prev');
+        }
+
+        &.--next {
+          background-image: url('./vcr.svg#next');
+        }
+
+        &.--last {
+          background-image: url('./vcr.svg#last');
+        }
+
+        &.--play {
+          background-image: url('./vcr.svg#play');
+        }
+
+        &.--pause {
+          background-image: url('./vcr.svg#pause');
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <div class="vcr-sprite --first"></div>
+      <div class="vcr-sprite --prev"></div>
+      <div class="vcr-sprite --play"></div>
+      <div class="vcr-sprite --pause"></div>
+      <div class="vcr-sprite --next"></div>
+      <div class="vcr-sprite --last"></div>
+    </article>
+  </body>
+</html>

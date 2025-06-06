@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Sprtite</title>
+    <style>
+      .icon {
+        --sprite-size: 50px;
+
+        width: var(--sprite-size);
+        aspect-ratio: 1;
+        margin: 0.5em;
+        display: inline-block;
+
+        background-size: calc(1 * var(--sprite-size));
+
+        &.--codepen {
+          background-image: url('./sprite.svg#codepen');
+        }
+        &.--dribbble {
+          background-image: url('./sprite.svg#dribbble');
+        }
+        &.--facebook {
+          background-image: url('./sprite.svg#facebook');
+        }
+        &.--github {
+          background-image: url('./sprite.svg#github');
+        }
+        &.--instagram {
+          background-image: url('./sprite.svg#instagram');
+        }
+        &.--linkedin {
+          background-image: url('./sprite.svg#linkedin');
+        }
+        &.--patreon {
+          background-image: url('./sprite.svg#patreon');
+        }
+        &.--pinterest {
+          background-image: url('./sprite.svg#pinterest');
+        }
+        &.--soundcloud {
+          background-image: url('./sprite.svg#soundcloud');
+        }
+        &.--twitter {
+          background-image: url('./sprite.svg#twitter');
+        }
+        &.--Vimeo {
+          background-image: url('./sprite.svg#Vimeo');
+        }
+        &.--youtube {
+          background-image: url('./sprite.svg#youtube');
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <div class="icon --github"></div>
+      <div class="icon --linkedin"></div>
+      <div class="icon --codepen"></div>
+      <div class="icon --twitter"></div>
+      <div class="icon --pinterest"></div>
+      <div class="icon --patreon"></div>
+      <div class="icon --Vimeo"></div>
+      <div class="icon --dribbble"></div>
+      <div class="icon --facebook"></div>
+      <div class="icon --youtube"></div>
+      <div class="icon --soundcloud"></div>
+      <div class="icon --instagram"></div>
+    </article>
+  </body>
+</html>

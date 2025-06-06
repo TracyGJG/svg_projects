@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Sprite</title>
+    <style>
+      .svg-sprite {
+        --sprite-size: 50px;
+
+        width: var(--sprite-size);
+        aspect-ratio: 1;
+        display: inline-block;
+        background-size: calc(2 * var(--sprite-size));
+
+        &.--circle {
+          background-image: url("./shapes.svg#image1");
+        }
+
+        &.--triangle {
+          background-image: url("./shapes.svg#image2");
+        }
+
+        &.--square {
+          background-image: url("./shapes.svg#image3");
+        }
+
+        &.--polygon {
+          background-image: url("./shapes.svg#image4");
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <article>
+      <div class="svg-sprite --circle"></div>
+      <div class="svg-sprite --triangle"></div>
+      <div class="svg-sprite --square"></div>
+      <div class="svg-sprite --polygon"></div>
+    </article>
+  </body>
+</html>

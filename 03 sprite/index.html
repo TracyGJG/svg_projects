@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Sprite</title>
+    <style>
+      .crud-sprite {
+        --sprite-size: 120px;
+
+        width: var(--sprite-size);
+        aspect-ratio: 1;
+        margin: 1em;
+        display: inline-block;
+
+        &.--edit {
+          background-image: url("./crud-sprite.svg#edit");
+        }
+        &.--delete {
+          background-image: url("./crud-sprite.svg#delete");
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="crud-sprite --edit"></div>
+    <div class="crud-sprite --delete"></div>
+  </body>
+</html>

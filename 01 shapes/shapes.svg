@@ -1,0 +1,20 @@
+<svg
+  version="2"
+  viewBox="0 0 200 200"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    svg > * {
+      display: none;
+    }
+
+    svg > *:target {
+      display: block;
+    }
+  </style>
+
+  <circle id="image1" cx="50" cy="50" r="48" fill="red" />
+  <polyline id="image2" points="2,98 98,98 50,2" fill="orange" />
+  <rect id="image3" x="0" y="2" width="96" height="96" fill="yellow" />
+  <polygon id="image4" points="50,2 92,26 92,74 50,98 8,74 8,26" fill="green"/>
+</svg>

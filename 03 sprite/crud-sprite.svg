@@ -1,0 +1,61 @@
+<svg
+  version="2"
+  viewBox="0 0 240 240"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    svg > g {
+      display: none;
+    }
+
+    svg > g:target {
+      display: block;
+    }
+  </style>
+
+  <rect x="0" y="0" width="240" height="240" fill="transparent" />
+
+  <g id="edit">
+    <polygon points="56,129, 185,0 239,0 87,158" fill="#000" stroke="#fff" stroke-width="4" />
+    <polygon points="24,191 24,95 119,0 239,0 239,72 120,191 120,191" 
+      fill="transparent" stroke="#000" stroke-width="4" />
+    <polygon points="24,191 24,143 72,191" fill="#000" />
+    <path d="M 24,95 A 24,24 60,0,1 56,129 A 24,24 60,0,1 87,158 A 24,24 60,0,1 120,191" 
+      fill="#fff" stroke="#000" stroke-width="3" />
+    <rect x="0" y="215" width="240" height="24" />
+  </g>
+
+  <g id="delete">
+    <ellipse cx="120" cy="192" rx="84" ry="16" />
+    <path d="M 12,36 L 39,192" fill="transparent" 
+      stroke="#000" stroke-width="3" />
+    <path d="M 228,36 L 201,192" fill="transparent" 
+      stroke="#000" stroke-width="3" />
+
+    <path d="M 120,12 L 120,208" fill="transparent" 
+      stroke="#000" stroke-width="3" />
+
+    <path d="M 66,56 L 78,206" fill="transparent" 
+      stroke="#000" stroke-width="3" />
+    <path d="M 36,52 L 56,200" fill="transparent" 
+      stroke="#000" stroke-width="3" />
+
+    <path d="M 174,56 L 162,206" fill="transparent" 
+      stroke="#000" stroke-width="3" />
+    <path d="M 204,52 L 184,200" fill="transparent" 
+      stroke="#000" stroke-width="3" />
+
+    <path d="M 147,14 L 141,178" fill="transparent" 
+      stroke="#000" stroke-width="3" />
+    <path d="M 93,14 L 99,178" fill="transparent" 
+      stroke="#000" stroke-width="3" />
+    <path d="M 188,16 L 180,182" fill="transparent" 
+      stroke="#000" stroke-width="3" />
+    <path d="M 52,16 L 60,182" fill="transparent" 
+      stroke="#000" stroke-width="3" />
+
+    <ellipse cx="120" cy="36" rx="108" ry="24" 
+      fill="transparent" stroke="#000" stroke-width="4" />
+  </g>
+
+</svg>

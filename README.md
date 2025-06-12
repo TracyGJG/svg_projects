@@ -2,7 +2,6 @@
 
 ## 0. Miscellany
 
-- sos-pendant
 - svg-sprite
 
 ## 1. Shapes

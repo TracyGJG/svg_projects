@@ -3,22 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SVG Index</title>
+    <title>SVG Arcs</title>
+    <style>
+      svg {
+        margin: 1em;
+        width: 200px;
+
+        & text {
+          font-size: 1.5em;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>SVG Index</h1>
-    <ul>
-      <li>
-        <span>00 - Miscellany</span>
-        <ul>
-          <li><a href="./00 miscellany/sos-pendant.html">SOS Pendant</a></li>
-          <li><a href="./00 miscellany/svg-sprite.html">SVG Sprite</a></li>
-        </ul>
-      </li>
-      <li><a href="./01 shapes/index.html">01 - Shapes</a></li>
-      <li><a href="./02 vcr-icons/">02 - VCR Icons</a></li>
-      <li><a href="./03 sprite/index.html">03 - CRUD Sprites</a></li>
-      <li><a href="./04 arcs/index.html">04 - Path Arcs</a></li>
-    </ul>
+    <h1>SVG Arcs</h1>
+
+    <svg viewbox="-10 -10 220 220">
+      <path
+        fill="#f00"
+        stroke-width="5"
+        stroke="#b00"
+        d="M187,150 A100,100 0 0 0 13,150"
+      />
+      <path fill="#700" d="M13,150 L13,130 L33,150 Z" />
+      <text text-anchor="middle" x="100" y="40">0: Small</text>
+      <text text-anchor="middle" x="100" y="80">0: Anti-clockwise</text>
+    </svg>
+    <svg viewbox="-10 -10 220 220">
+      <path
+        fill="#ff0"
+        stroke-width="5"
+        stroke="#bb0"
+        d="M187,150 A100,100 0 1 0 13,150"
+      />
+      <path fill="#770" d="M13,150 L13,130 L-7,150 Z" />
+      <text text-anchor="middle" x="100" y="50">1: Large</text>
+      <text text-anchor="middle" x="100" y="80">0: Anti-clockwise</text>
+    </svg>
+    <svg viewbox="-10 -10 220 220">
+      <path
+        fill="#0f0"
+        stroke-width="5"
+        stroke="#0b0"
+        d="M13,150 A100,100 0 0 1 187,150"
+      />
+      <path fill="#070" d="M187,150 L187,130 L167,150 Z" />
+      <text text-anchor="middle" x="100" y="40">0: Small</text>
+      <text text-anchor="middle" x="100" y="80">1: Clockwise</text>
+    </svg>
+    <svg viewbox="-10 -10 220 220">
+      <path
+        fill="#0ff"
+        stroke-width="5"
+        stroke="#0bb"
+        d="M13,150 A100,100 0 1 1 187,150"
+      />
+      <path fill="#077" d="M187,150 L187,130 L207,150 Z" />
+      <text text-anchor="middle" x="100" y="40">1: Large</text>
+      <text text-anchor="middle" x="100" y="80">1: Clockwise</text>
+    </svg>
   </body>
 </html>
